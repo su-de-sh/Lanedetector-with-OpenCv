@@ -32,7 +32,7 @@ if not args.get('image'):
 else:
     image = cv2.imread(args["image"])
     output = lane(image)
-    cv2.imwrite('image/output.jpg')
+    cv2.imwrite('image/output.jpg',output)
     cv2.imshow("output", output)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
